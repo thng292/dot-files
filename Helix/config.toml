@@ -1,0 +1,47 @@
+theme = "github_light_no_bg"
+
+[editor]
+line-number = "relative"
+shell = ["powershell", "exit"]
+cursorline = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+auto-signature-help = true
+display-inlay-hints = true
+display-signature-help-docs = true
+snippets = true
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = false
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"C-ret" = "goto_definition"
+C-s = ":w"
+"A-S-f" = ":format"
+
+[keys.insert]
+j = { j = "normal_mode" }
+"C-ret" = "goto_definition"
+C-s = ":w"
+"A-S-f" = ":format"
