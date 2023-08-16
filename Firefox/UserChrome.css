@@ -53,11 +53,6 @@
   -moz-box-ordinal-group: 99999 !important;
 }
 
-/* .tabbrowser-tab:not([pinned="true"]):hover
-  .tab-icon-stack:not([indicator-replaces-favicon]) {
-  display: none;
-} */
-
 /* ----- pinned tab width ----- */
 .tabbrowser-tab[pinned] {
   width: auto !important;
@@ -92,11 +87,6 @@
   min-width: var(--tab-min-height) !important;
 }
 
-/* Expand on hover */
-.tabbrowser-tab:not([selected]):hover {
-  min-width: 240px !important;
-}
-
 /*============================================================================*/
 /* S E T T I N G S */
 
@@ -109,7 +99,7 @@
 
 #navigator-toolbox:-moz-window-inactive,
 .titlebar-color {
-  background: unset !important;
+  background: color-mix(in srgb, field 83%, AccentColor) !important;
   transition: all 0.4s ease-out;
 }
 
